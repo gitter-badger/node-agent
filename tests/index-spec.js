@@ -10,11 +10,11 @@ describe('NodeAgent', function() {
             cpu: true,
             mem: true
         });
-
+        
+        assert.typeOf(agent, 'object');
+        
         agent.start();
 
         global.gc();
-
-        assert.typeOf(agent, 'object');
     });
 });
